@@ -12,8 +12,7 @@ const csrf = require('csurf');
 const morgan = require('morgan');
 const cors = require('cors');
 
-const { initDb, getSettings, runAsync } = require(path.resolve(__dirname, 'src/db/db'));
-require('./src/auth/passport');
+const { initDb, getSettings, runAsync } = require('./src/db/db.js');
 
 const authRoutes = require('./src/routes/auth');
 const userRoutes = require('./src/routes/user');
